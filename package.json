@@ -18,7 +18,8 @@
   ],
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "pnpm build"
+    "prepublishOnly": "pnpm build",
+    "release": "pnpm run build && pnpm -r publish --access public --no-git-checks"
   },
   "dependencies": {
     "@inquirer/prompts": "8.1.0",
