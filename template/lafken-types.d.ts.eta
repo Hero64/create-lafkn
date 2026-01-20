@@ -1,0 +1,42 @@
+/**
+ * Type declarations for Lafkn framework resources
+ * This file extends the interfaces from @lafkn/common to define
+ * the available resources for this specific application
+ */
+
+declare module "@lafkn/common" {
+  interface ModulesAvailable {
+    /**
+     * @example
+     *
+     * Awesome: {
+     *   StateMachine: {
+     *     AwesomeStateMachine: true;
+     *   };
+     *
+     *   Queue: {
+     *     AwesomeQueue: true
+     *   }
+     * }
+     */
+  }
+
+  interface BucketAvailable {
+    /**
+     * @Example
+     * AwesomeBucket: true;
+     */
+  }
+
+  interface ApiRestAvailable {}
+
+  interface ApiAuthorizerAvailable {}
+
+  interface DynamoTableAvailable {}
+
+  interface AuthAvailable {}
+
+  interface EventBusAvailable {}
+}
+
+export {};

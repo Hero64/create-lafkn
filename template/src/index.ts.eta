@@ -1,0 +1,70 @@
+import { createApp } from "@lafkn/main";
+<% if (it.services.includes('api')) { %>
+import { ApiResolver } from '@lafkn/api/resolver';
+<% } %>
+<% if (it.services.includes('auth')) { %>
+import { AuthResolver } from '@lafkn/auth/resolver';
+<% } %>
+<% if (it.services.includes('bucket')) { %>
+import { BucketResolver } from '@lafkn/bucket/resolver';
+<% } %>
+<% if (it.services.includes('dynamo')) { %>
+import { DynamoResolver } from '@lafkn/dynamo/resolver';
+<% } %>
+<% if (it.services.includes('event')) { %>
+import { EventRuleResolver } from '@lafkn/event/resolver';
+<% } %>
+<% if (it.services.includes('queue')) { %>
+import { QueueResolver } from '@lafkn/queue/resolver';
+<% } %>
+<% if (it.services.includes('schedule')) { %>
+import { ScheduleResolver } from '@lafkn/schedule/resolver';
+<% } %>
+<% if (it.services.includes('state-machine')) { %>
+import { StateMachineResolver } from '@lafkn/state-machine/resolver';
+<% } %>
+
+import MainModule from "./module/main/main.module";
+
+createApp({
+  name: "<%= it.appName %>",
+  modules: [MainModule],
+  resolvers: [
+<% if (it.services.includes('api')) { %>
+    new ApiResolver({
+      restApi: {
+        name: "<%= it.appName %>Api"
+      }
+    }),
+<% } %>
+<% if (it.services.includes('auth')) { %>
+    new AuthResolver({
+      name: "<%= it.appName %>",
+      userPool: {
+        // ...
+      },
+      userClient: {
+        // ...
+      },
+    }),
+<% } %>
+<% if (it.services.includes('bucket')) { %>
+    new BucketResolver([]),
+<% } %>
+<% if (it.services.includes('dynamo')) { %>
+    new DynamoResolver([]),
+<% } %>
+<% if (it.services.includes('event')) { %>
+    new EventRuleResolver(),
+<% } %>
+<% if (it.services.includes('queue')) { %>
+    new QueueResolver(),
+<% } %>
+<% if (it.services.includes('schedule')) { %>
+    new ScheduleResolver(),
+<% } %>
+<% if (it.services.includes('state-machine')) { %>
+    new StateMachineResolver(),
+<% } %>
+  ],
+});

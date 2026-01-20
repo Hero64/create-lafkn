@@ -1,0 +1,47 @@
+{
+  "name": "<%= it.appName %>",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "cdktf:deploy": "npm run build  && cdktf deploy",
+    "cdktf:destroy": "npm run build && cdktf destroy",
+    "cdktf:synth": "npm run build && cdktf synth",
+    "clean": "rm -rf cdktf.out dist .out"
+  },
+  "dependencies": {
+<% if (it.services.includes('api')) { %>
+    "@lafkn/api": "0.1.0",
+<% } %>
+<% if (it.services.includes('auth')) { %>
+    "@lafkn/auth": "0.1.0",
+<% } %>
+<% if (it.services.includes('bucket')) { %>
+    "@lafkn/bucket": "0.1.0",
+<% } %>
+<% if (it.services.includes('dynamo')) { %>
+    "@lafkn/dynamo": "0.1.0",
+<% } %>
+<% if (it.services.includes('event')) { %>
+    "@lafkn/event": "0.1.0",
+<% } %>
+<% if (it.services.includes('queue')) { %>
+    "@lafkn/queue": "0.1.0",
+<% } %>
+<% if (it.services.includes('schedule')) { %>
+    "@lafkn/schedule": "0.1.0",
+<% } %>
+<% if (it.services.includes('state-machine')) { %>
+    "@lafkn/state-machine": "0.1.0",
+<% } %>
+    "@lafkn/common": "0.1.0",
+    "@lafkn/main": "0.1.0",
+    "cdktf": "0.21.0"
+  },
+  "devDependencies": {
+    "cdktf-cli": "0.21.0",
+    "typescript": "5.9.3"
+  }
+}

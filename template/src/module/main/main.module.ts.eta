@@ -1,0 +1,9 @@
+import { createModule } from "@lafkn/main";
+
+// This is a example module
+const MainModule = createModule({
+  name: "main",
+  resources: [],
+});
+
+export default MainModule;

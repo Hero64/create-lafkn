@@ -1,0 +1,5 @@
+{
+  "app": "node dist/index.js",
+  "projectId": "lafkn-<%= it.uuid %>",
+  "language": "typescript"
+}

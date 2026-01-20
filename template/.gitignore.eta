@@ -1,0 +1,4 @@
+# output directories
+.out
+cdktf.out
+dist
