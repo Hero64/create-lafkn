@@ -2,6 +2,12 @@
   "name": "create-lafkn",
   "version": "1.0.0",
   "description": "create lafkn project",
+  "keywords": [
+    "aws",
+    "lafkn",
+    "serverless",
+    "cdk"
+  ],
   "license": "ISC",
   "author": "Aníbal Jorquera<ajorquera.cornejo@gmail.com>",
   "type": "module",
