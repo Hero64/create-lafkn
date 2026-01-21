@@ -42,7 +42,6 @@ const processDirectory = async (
         const realDestPath = destPath.replace(/\.eta$/, "");
         const eta = new Eta();
 
-        console.log(context);
         const rendered = eta.renderString(content, context);
         await fs.writeFile(realDestPath, rendered);
       } else {

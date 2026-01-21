@@ -41,6 +41,7 @@
     "cdktf": "0.21.0"
   },
   "devDependencies": {
+    "@types/node": "25.0.10",
     "cdktf-cli": "0.21.0",
     "typescript": "5.9.3"
   }
