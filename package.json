@@ -23,8 +23,8 @@
     "release": "pnpm run build && pnpm -r publish --access public --no-git-checks"
   },
   "dependencies": {
-    "@inquirer/prompts": "8.1.0",
-    "eta": "4.5.0"
+    "@inquirer/prompts": "^8.2.0",
+    "eta": "^4.5.0"
   },
   "devDependencies": {
     "@types/node": "25.0.3",
