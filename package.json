@@ -14,7 +14,8 @@
   "main": "dist/index.js",
   "bin": "./dist/index.js",
   "files": [
-    "lib"
+    "dist",
+    "template"
   ],
   "scripts": {
     "build": "tsc",
