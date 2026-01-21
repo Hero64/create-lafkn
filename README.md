@@ -73,7 +73,7 @@ npm run cdktf:synth
 - `npm run build` - Compile TypeScript to JavaScript
 - `npm run cdktf:deploy` - Build and deploy your infrastructure
 - `npm run cdktf:destroy` - Destroy your infrastructure
-- `npm run cdktf:synth` - Synthesize CloudFormation templates
+- `npm run cdktf:synth` - Synthesize terraform template
 - `npm run clean` - Clean build artifacts
 
 ## Support
