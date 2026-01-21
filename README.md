@@ -1,6 +1,6 @@
-# 🌊 Lafkn
+# 🌊 Lafkn 🌊
 
-A modern serverless framework scaffolding tool for AWS CDK projects.
+A modern serverless framework scaffolding tool for cdktf projects.
 
 ## Installation
 
