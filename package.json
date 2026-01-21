@@ -1,7 +1,7 @@
 {
   "name": "create-lafkn",
-  "version": "1.0.2",
-  "description": "Create a simple lafkn project",
+  "version": "1.0.3",
+  "description": "Create a lafkn project",
   "keywords": [
     "aws",
     "lafkn",
