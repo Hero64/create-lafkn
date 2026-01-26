@@ -62,11 +62,11 @@ const checkDirectoryEmpty = async (dir: string): Promise<boolean> => {
 
 const main = async () => {
   try {
-    console.log("🌊 Welcome to lafken 🌊");
+    console.log("🌊 Welcome to Lafkn 🌊");
 
     const appName = await input({
       message: "Project name:",
-      default: "my-lafken-app",
+      default: "my-lafkn-app",
       validate: (value) => {
         if (!value || value.trim().length === 0) {
           return "Project name cannot be empty";
@@ -185,7 +185,7 @@ const main = async () => {
       }
     }
 
-    console.log("\n🎉 All done! Happy coding with lafken!\n");
+    console.log("\n🎉 All done! Happy coding with Lafkn!\n");
     console.log("Next steps:");
 
     if (!useCurrentDir) {
