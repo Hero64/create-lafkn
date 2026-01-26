@@ -1,17 +1,17 @@
-# 🌊 Lafkn 🌊
+# 🌊 Lafken 🌊
 
 A modern serverless framework scaffolding tool for cdktf projects.
 
 ## Installation
 
 ```bash
-npm create lafkn@latest
+npm create lafken@latest
 ```
 
 Or use directly with npx:
 
 ```bash
-npx create-lafkn
+npx create-lafken
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ npx create-lafkn
 Simply run the command and follow the interactive prompts:
 
 ```bash
-npm create lafkn
+npm create lafken
 ```
 
 The CLI will guide you through:
@@ -31,7 +31,7 @@ The CLI will guide you through:
 
 ## Available Services
 
-Lafkn supports the following AWS services out of the box:
+Lafken supports the following AWS services out of the box:
 
 - **API Gateway** - RESTful API endpoints
 - **Authentication** - User authentication and authorization
@@ -47,7 +47,7 @@ Lafkn supports the following AWS services out of the box:
 After scaffolding, your project will have the following structure:
 
 ```
-my-lafkn-app/
+my-lafken-app/
 ├── src/
 │   └── index.ts
 ├── package.json
@@ -62,7 +62,7 @@ The `package.json` will include only the services you selected during setup.
 Once your project is created:
 
 ```bash
-cd my-lafkn-app
+cd my-lafken-app
 npm install  # if you didn't install during setup
 npm run build
 npm run cdktf:synth

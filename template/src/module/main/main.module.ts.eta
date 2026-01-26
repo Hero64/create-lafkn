@@ -1,4 +1,4 @@
-import { createModule } from "@lafkn/main";
+import { createModule } from "@lafken/main";
 
 // This is a example module
 const MainModule = createModule({
